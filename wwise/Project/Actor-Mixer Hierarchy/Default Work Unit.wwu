@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4D38C533-147F-4F09-92DF-8702384839AD}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{4D38C533-147F-4F09-92DF-8702384839AD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Demo_sfx" ID="{641EAD13-58B1-4B2C-A2B7-49A61CFA63A9}" ShortID="149599863">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DC78605F-64B1-468E-B552-AF6F7342C717}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{42445D6D-448C-40AD-983D-470015565B3F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music_levelup" ID="{AA7D3A39-25EA-438C-BC1E-68FE4D4C6C25}">
+							<Language>SFX</Language>
+							<AudioFile>Music_levelup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1040887622"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music_levelup" ID="{AA7D3A39-25EA-438C-BC1E-68FE4D4C6C25}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1040102313	Demo_event			\Default Work Unit\Demo_event	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1040887622	Demo_sfx	C:\Users\Jonas\Desktop\GMTK Game Jam 2023\wwise\Project\.cache\Android\SFX\Music_levelup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Demo_sfx		1036860
+
