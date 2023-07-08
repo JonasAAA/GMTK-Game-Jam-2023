@@ -4,11 +4,17 @@ onready var camera = $Camera
 onready var spaceship = $Spaceship
 onready var level_ui = $LevelUI
 var asteroid_template = preload("res://asteroid.tscn")
-var random = RandomNumberGenerator.new()
+var random: RandomNumberGenerator
 var asteroids: Array
 const asteroid_despawn_dist = 3000
 
 func _ready() -> void:
+	Wwise.load_bank_id(AK.BANKS.INIT)
+	Wwise.load_bank_id(AK.BANKS.SOUNDS)
+	Wwise.register_listener(self)
+	
+	random = RandomNumberGenerator.new()
+	random.seed = OS.get_ticks_msec()
 #	get_tree().set_debug_collisions_hint(true) 
 	spaceship.position = Vector2.ZERO
 
@@ -20,6 +26,7 @@ func _physics_process(delta: float) -> void:
 	level_ui.set_health(spaceship.health)
 	if spaceship.health == 0:
 		get_tree().reload_current_scene()
+#	print("velocity ", spaceship.linear_velocity)
 #	print(spaceship.health)
 #	print(spaceship.linear_velocity)
 
@@ -36,7 +43,7 @@ func spawn_asteroid() -> void:
 	asteroids.append(asteroid)
 
 func remove_far_asteroids() -> void:
-	var next_asteroid_array: Array
+	var next_asteroid_array: Array = []
 	for asteroid in asteroids:
 		if asteroid.position.distance_to(spaceship.position) > asteroid_despawn_dist:
 			asteroid.queue_free()
