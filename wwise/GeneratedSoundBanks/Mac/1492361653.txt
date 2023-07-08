@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3850714037	ShipCollision			\Default Work Unit\ShipCollision	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Default Work Unit\Speed	
+	2792801345	Mass			\Default Work Unit\Mass	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	928114987	ShipCollision	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Mac\SFX\ShipCollision_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShipCollision		5119
+

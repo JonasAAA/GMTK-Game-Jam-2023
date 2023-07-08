@@ -3,9 +3,13 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{46E655F0-BDC2-43E7-8B7F-22BD3D54876F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Demo_soundbank" ID="{03D7D8BF-5764-4E2E-A473-47E91428AAC4}">
+				<SoundBank Name="Sounds" ID="{AE9ECAE0-49E2-421A-94ED-C491288E6AB3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Demo_event" ID="{40904EB1-54B9-43CA-B2CA-C4FB43DFE11E}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ShipCollision" ID="{533CEFDC-CB7C-4FE9-952F-51C72E1906CE}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

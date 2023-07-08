@@ -2,10 +2,10 @@ class_name AK
 
 class EVENTS:
 
-	const DEMO_EVENT = 1040102313 
+	const SHIPCOLLISION = 3850714037 
 
 	const _dict = { 
-	 "DEMO EVENT": DEMO_EVENT
+	 "SHIPCOLLISION": SHIPCOLLISION
 	} 
 
 class STATES:
@@ -18,7 +18,13 @@ class SWITCHES:
 
 class GAME_PARAMETERS:
 
-	const _dict = {} 
+	const SPEED = 640949982 
+	const MASS = 2792801345 
+
+	const _dict = { 
+	 "SPEED": SPEED,
+	 "MASS": MASS
+	} 
 
 class TRIGGERS:
 
@@ -27,11 +33,11 @@ class TRIGGERS:
 class BANKS:
 
 	const INIT = 1355168291 
-	const DEMO_SOUNDBANK = 1202359858 
+	const SOUNDS = 1492361653 
 
 	const _dict = { 
 	 "INIT": INIT,
-	 "DEMO SOUNDBANK": DEMO_SOUNDBANK
+	 "SOUNDS": SOUNDS
 	} 
 
 class BUSSES:

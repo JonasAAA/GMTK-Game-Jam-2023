@@ -53,19 +53,112 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Linux">
-							<ConversionPlugin Name="" ID="{90B7EB26-7D80-4999-A687-3A19337E7467}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{FFFFD9AA-2474-4DA8-835E-F2372319FD60}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{F570A228-0665-4E41-A89C-4439D341F883}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{BB8877AA-108F-451B-B398-898FFD2997E1}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{996D8FA8-CAAD-4B63-AFFC-98237B9FCD93}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="iOS">
-							<ConversionPlugin Name="" ID="{E2C53BA7-5F57-46D1-B2ED-1C9BC52879B1}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{B86DD965-A65F-481D-B614-0C6ABA236D22}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
 							<ConversionPlugin Name="" ID="{45888B32-8A2C-458E-8F11-A5E2930B2791}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+				<Conversion Name="SFX" ID="{43BD3F91-D473-4614-9805-188D9BAF5277}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">4</Value>
+								<Value Platform="Windows">4</Value>
+								<Value Platform="Android">4</Value>
+								<Value Platform="iOS">4</Value>
+								<Value Platform="Mac">4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SRConversionQuality" Type="int32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Linux">0</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Android">0</Value>
+								<Value Platform="iOS">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Linux">
+							<ConversionPlugin Name="" ID="{7E0065CE-895D-46C8-B082-126376B3D928}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="30"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{6F1BEB89-E032-47AD-9F0A-AAD384F3EDAE}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="30"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{A0DFA929-4A20-4AA4-87C6-4602589EED94}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="30"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="iOS">
+							<ConversionPlugin Name="" ID="{2151E6C1-0DD9-4D52-AC89-0F6F16981FDF}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="30"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{DD9BCE18-E899-47A3-8EBA-200C9C581333}" PluginName="WEM Opus" CompanyID="0" PluginID="20">
+								<PropertyList>
+									<Property Name="Quality" Type="int32" Value="30"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Jonas\Desktop\GMTK Game Jam 2023\wwise\Project\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Jonas\Desktop\GMTK Game Jam 2023\wwise\Project\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Jonas\Desktop\GMTK Game Jam 2023\wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Jonas\Desktop\GMTK Game Jam 2023\wwise\Project\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1202359858" Language="SFX" Hash="4144058623">
-			<ObjectPath>\SoundBanks\Default Work Unit\Demo_soundbank</ObjectPath>
-			<ShortName>Demo_soundbank</ShortName>
-			<Path>1202359858.bnk</Path>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3066223675">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>1355168291.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1492361653" Language="SFX" Hash="1945066228">
+			<ObjectPath>\SoundBanks\Default Work Unit\Sounds</ObjectPath>
+			<ShortName>Sounds</ShortName>
+			<Path>1492361653.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1040102313" Name="Demo_event" ObjectPath="\Events\Default Work Unit\Demo_event">
+				<Event Id="3850714037" Name="ShipCollision" ObjectPath="\Events\Default Work Unit\ShipCollision">
 					<IncludedMemoryFiles>
-						<File Id="1040887622" Language="SFX">
-							<ShortName>Music_levelup.wav</ShortName>
-							<Path>SFX\Music_levelup_10C4C929.wem</Path>
+						<File Id="928114987" Language="SFX">
+							<ShortName>ShipCollision.wav</ShortName>
+							<Path>SFX\ShipCollision_3955A3DE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
-		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>1355168291.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="640949982" Name="Speed" ObjectPath="\Game Parameters\Default Work Unit\Speed"/>
+				<GameParameter Id="2792801345" Name="Mass" ObjectPath="\Game Parameters\Default Work Unit\Mass"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

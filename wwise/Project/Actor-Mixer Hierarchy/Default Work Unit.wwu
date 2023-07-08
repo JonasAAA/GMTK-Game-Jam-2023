@@ -3,27 +3,138 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{4D38C533-147F-4F09-92DF-8702384839AD}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Demo_sfx" ID="{641EAD13-58B1-4B2C-A2B7-49A61CFA63A9}" ShortID="149599863">
+				<Sound Name="ShipCollision" ID="{32CF1EE3-0B1B-4A07-9EFD-96E6F6CC7C23}" ShortID="855925715">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{060CB400-69F9-4154-B9C3-03BEBF9DE0BD}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="MakeUpGain" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{A9D52F58-44F1-4959-BA6C-89C4B9EC9E8C}" ShortID="737872923">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Speed" ID="{EE69D1F2-2143-487E-880E-E673FD7FC357}" WorkUnitID="{FB414DC5-4078-4495-BA29-070094DAFA4E}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{4D5DEEE9-94FD-4258-850C-44A4B3546E12}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-5.65067</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>1.65948</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+								<RTPC Name="" ID="{E2E4A0C2-1137-4C31-87E2-EA1F85537C35}" ShortID="148915599">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Mass" ID="{544616C6-950B-4ED3-916E-9796348F362D}" WorkUnitID="{FB414DC5-4078-4495-BA29-070094DAFA4E}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{F8BF85CA-9B38-478C-AA92-185EF65F9025}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-1.0418</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>SCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-6</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7840CAB1-6CE5-4570-AC02-EC649CCF628C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{724558A6-B3F8-4789-9B02-594DFA45F92A}" ShortID="446822967">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Mass" ID="{544616C6-950B-4ED3-916E-9796348F362D}" WorkUnitID="{FB414DC5-4078-4495-BA29-070094DAFA4E}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{48D6DDA5-DCEC-42C6-AE35-7AD3EB22CE81}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-1545</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>SCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>2000</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="SpeakerPanning" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DC78605F-64B1-468E-B552-AF6F7342C717}"/>
+							<ObjectRef Name="SFX" ID="{43BD3F91-D473-4614-9805-188D9BAF5277}" WorkUnitID="{DC78605F-64B1-468E-B552-AF6F7342C717}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{42445D6D-448C-40AD-983D-470015565B3F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Music_levelup" ID="{AA7D3A39-25EA-438C-BC1E-68FE4D4C6C25}">
+						<AudioFileSource Name="ShipCollision" ID="{1731176D-96AF-48BC-AABE-6FA037FAE539}">
 							<Language>SFX</Language>
-							<AudioFile>Music_levelup.wav</AudioFile>
+							<AudioFile>ShipCollision.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="1040887622"/>
+								<MediaID ID="928114987"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{4D5A40B4-9683-45C7-82E4-5C0FCD174C00}"/>
+						<Position Name="" ID="{319A7F5E-2BA0-4433-9CA3-404681BBEC18}"/>
+					</PositioningInfo>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="Music_levelup" ID="{AA7D3A39-25EA-438C-BC1E-68FE4D4C6C25}" Platform="Linked"/>
+						<ActiveSource Name="ShipCollision" ID="{1731176D-96AF-48BC-AABE-6FA037FAE539}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
