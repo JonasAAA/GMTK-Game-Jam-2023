@@ -53,13 +53,13 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-1.0418</YPos>
+												<YPos>-6</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>SCurve</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>-6</YPos>
+												<YPos>-1.042</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -94,13 +94,13 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-1545</YPos>
+												<YPos>2000</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>SCurve</SegmentShape>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>2000</YPos>
+												<YPos>-1545</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
