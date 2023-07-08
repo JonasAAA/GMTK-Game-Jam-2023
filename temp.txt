@@ -1,0 +1,17 @@
+NEED to have:
+* viarious size asteroids
+* damage the spaceship
+* calculate score
+* allow player to move asteroids
+
+The spaceship should be just a regular physics body, but with some rudimentary AI, which tries to make it look forward and have some particular speed
+The asteroids should have on average 0 speed, so that if spaceship is fast it feels so.
+
+MAY NEED to keep spaceship position under control. Probably just apply forces to everything so that spaceship position is around 0
+OR could loop though all asteroids and manually set their positions (careful - should only set some helper variables, and use them in _integrate_forces)
+
+RigidBody2D seems to be what I want most game objects to be
+
+Will probably need rocket coordinates to be (0, 0) all the time as otherwise may get imprecise behaviour when all coordinates are large
+
+MAY need to use KinematicBody2D instead of RigidBody2D to get more control of how things work, e.g. be able to keep rocket coordinates at (0, 0)
