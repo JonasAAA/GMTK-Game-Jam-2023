@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://heading_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://pause_ui.gd" type="Script" id=3]
+
+[node name="PauseUI" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 952.0
+margin_top = 536.0
+margin_right = 998.0
+margin_bottom = 550.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+text = "Paused"
+align = 1
+valign = 1
+
+[node name="Resume" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 776.0
+margin_right = 1212.0
+margin_bottom = 876.0
+text = "Resume"
+
+[node name="Exit" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 936.0
+margin_right = 1212.0
+margin_bottom = 1036.0
+text = "Exit"
+
+[connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://spaceship.tscn" type="PackedScene" id=1]
 [ext_resource path="res://level.gd" type="Script" id=2]
+[ext_resource path="res://game_over_ui.tscn" type="PackedScene" id=3]
 [ext_resource path="res://level_ui.tscn" type="PackedScene" id=4]
+[ext_resource path="res://pause_ui.tscn" type="PackedScene" id=5]
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 2 )
@@ -13,3 +15,12 @@ script = ExtResource( 2 )
 current = true
 
 [node name="LevelUI" parent="." instance=ExtResource( 4 )]
+
+[node name="PauseUI" parent="." instance=ExtResource( 5 )]
+pause_mode = 2
+visible = false
+
+[node name="GameOverUI" parent="." instance=ExtResource( 3 )]
+visible = false
+
+[connection signal="pause_pressed" from="LevelUI" to="." method="_on_LevelUI_pause_pressed"]

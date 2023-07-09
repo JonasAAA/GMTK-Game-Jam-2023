@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://heading_font.tres" type="DynamicFont" id=1]
+
+[node name="CustomButton" type="Button"]
+margin_right = 500.0
+margin_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+text = "Button"

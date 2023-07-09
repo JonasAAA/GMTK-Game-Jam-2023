@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://title_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://main_menu.gd" type="Script" id=3]
+[ext_resource path="res://heading_font.tres" type="DynamicFont" id=4]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -464.0
+margin_top = 88.0
+margin_right = 472.0
+margin_bottom = 272.0
+custom_fonts/font = ExtResource( 1 )
+text = "Game Title"
+align = 1
+valign = 1
+
+[node name="HighScore" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -272.0
+margin_top = 320.0
+margin_right = 283.0
+margin_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = ExtResource( 4 )
+text = "High score 1000"
+align = 1
+valign = 1
+
+[node name="Start" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 504.0
+margin_right = 1212.0
+margin_bottom = 604.0
+text = "Start"
+
+[node name="Rules" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 648.0
+margin_right = 1212.0
+margin_bottom = 748.0
+text = "Rules"
+
+[node name="Credits" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 792.0
+margin_right = 1212.0
+margin_bottom = 892.0
+text = "Credits"
+
+[node name="Exit" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 928.0
+margin_right = 1212.0
+margin_bottom = 1028.0
+text = "Exit"
+
+[connection signal="tree_entered" from="." to="." method="_on_MainMenu_tree_entered"]
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Rules" to="." method="_on_Rules_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

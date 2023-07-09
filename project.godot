@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GMTK Game Jam 2023"
-run/main_scene="res://level.tscn"
+run/main_scene="res://main_menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -41,6 +41,7 @@ config/icon="res://icon.png"
 WwiseSettings="*res://addons/wwise/editor/wwise_settings.gd"
 Wwise="*res://addons/wwise/bin/wwise-gdnative.gdns"
 Waapi="*res://addons/wwise/bin/waapi-gdnative.gdns"
+GlobalState="*res://global_state.tscn"
 
 [display]
 

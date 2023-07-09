@@ -36,7 +36,7 @@ func get_mouse_local_pos() -> Vector2:
 func get_cur_time_msec() -> int:
 	return OS.get_ticks_msec()
 
-func _on_Asteroid_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_Asteroid_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if drag_info != null:
 		return
 	if event is InputEventMouseButton:

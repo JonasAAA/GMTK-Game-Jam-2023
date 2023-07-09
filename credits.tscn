@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://body_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://credits.gd" type="Script" id=3]
+[ext_resource path="res://escape_shortcut.tres" type="ShortCut" id=4]
+
+[node name="Credits" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -327.5
+margin_top = -61.5
+margin_right = 327.5
+margin_bottom = 61.5
+custom_fonts/font = ExtResource( 1 )
+text = "Milda Venckutė - music
+Jonas Pukšta - programming
+Paulius Kinderis - art and sound effects"
+
+[node name="Back" parent="." instance=ExtResource( 2 )]
+margin_left = 712.0
+margin_top = 752.0
+margin_right = 1212.0
+margin_bottom = 852.0
+shortcut = ExtResource( 4 )
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

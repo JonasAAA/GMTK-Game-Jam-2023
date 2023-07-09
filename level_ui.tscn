@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://body_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://level_ui.gd" type="Script" id=2]
+[ext_resource path="res://escape_shortcut.tres" type="ShortCut" id=3]
 
 [node name="LevelUI" type="CanvasLayer"]
 script = ExtResource( 2 )
@@ -15,6 +16,14 @@ margin_left = -152.0
 margin_top = -88.0
 margin_right = 152.0
 custom_fonts/font = ExtResource( 1 )
-text = "asjfdkjsbd"
+text = "Health 100
+Score 1000"
 align = 1
 valign = 1
+
+[node name="Pause" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+shortcut = ExtResource( 3 )
+
+[connection signal="pressed" from="Pause" to="." method="_on_Pause_pressed"]
