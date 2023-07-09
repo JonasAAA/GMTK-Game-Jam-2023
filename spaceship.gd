@@ -6,6 +6,7 @@ export var target_speed = 200
 const drag = 10
 const thrust_vel = 100
 var close_asteroid_count: int
+var last_intensity: int
 
 func _ready() -> void:
 	close_asteroid_count = 0
@@ -23,14 +24,19 @@ func _on_Spaceship_body_entered(body: Node) -> void:
 	Wwise.set_rtpc_id(AK.GAME_PARAMETERS.SPEED, wwise_speed)
 	Wwise.post_event_id(AK.EVENTS.SHIPCOLLISION, self)
 
+func set_intensity(new_intensity: int) -> void:
+	if new_intensity != last_intensity:
+		last_intensity = new_intensity
+		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, new_intensity, self)
+
 func _integrate_forces(state: Physics2DDirectBodyState) -> void:
 	print("close_asteroid_count ", close_asteroid_count)
 	if close_asteroid_count <= 5:
-		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.SMALL, self)
+		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.SMALL)
 	elif close_asteroid_count <= 10:
-		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.MEDIUM, self)
+		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.MEDIUM)
 	else:
-		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.BIG, self)
+		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.BIG)
 	if health < 0:
 		return
 #	if state.linear_velocity.x

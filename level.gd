@@ -15,7 +15,7 @@ var playing: bool = false
 
 func _ready() -> void:
 	Wwise.register_game_obj(self, "Level")
-	Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.LOW, self)
+	print("set switch ", Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.LOW, self))
 	random = RandomNumberGenerator.new()
 	random.seed = OS.get_ticks_msec()
 	print("random seed ", random.seed)
@@ -30,6 +30,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	if score > 200:
+		print("uinasfnaisnd")
 		Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.MID, self)
 	if not playing:
 		return
