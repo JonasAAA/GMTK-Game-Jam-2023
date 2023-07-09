@@ -18,6 +18,51 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="UIClick" ID="{BA862C99-50BA-4C7F-8DCB-00606E520B00}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{2F7D1B68-8A52-4817-9AA0-1EC0A63E964E}" ShortID="178790593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIClick" ID="{C0F8447F-F521-4D96-9FB3-70CDA9AAF9A4}" WorkUnitID="{4D38C533-147F-4F09-92DF-8702384839AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UIClickBack" ID="{BD7E4044-B7FD-4F9A-8977-8C1FE805145A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{E4DBB901-6849-413C-AC0A-96F30207556E}" ShortID="573594268">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIClickBack" ID="{15AFD99B-60DE-49D1-BC45-60FFC4FF901C}" WorkUnitID="{4D38C533-147F-4F09-92DF-8702384839AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UIHover" ID="{5D3A50C8-A31E-4AB9-B6D4-EDCD3624D34A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{106FA14A-A0CD-40D7-9108-861660B7A1C7}" ShortID="69877763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UIHover" ID="{583DBEE8-AB7E-4400-8FE1-F59D5EDE876C}" WorkUnitID="{4D38C533-147F-4F09-92DF-8702384839AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

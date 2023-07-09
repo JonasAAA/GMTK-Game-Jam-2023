@@ -1,4 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	199363535	UIHover			\Default Work Unit\UIHover	
+	2807303240	UIClickBack			\Default Work Unit\UIClickBack	
+	3164408517	UIClick			\Default Work Unit\UIClick	
 	3850714037	ShipCollision			\Default Work Unit\ShipCollision	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -6,5 +9,19 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2792801345	Mass			\Default Work Unit\Mass	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	928114987	ShipCollision	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\ShipCollision_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShipCollision		5119
+	55605163	UIHover10	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover10_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover10		1569
+	95023292	UIHover06	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover06_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover06		1668
+	155153333	UIHover05	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover05_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover05		1728
+	409328877	UIClickBack	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIClickBack_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClickBack		5177
+	410179348	UIHover09	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover09_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover09		1574
+	427398932	UIHover08	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover08_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover08		1586
+	550121790	UIClick	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIClick_DD6AEF82.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClick		6036
+	568945613	UIHover12	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover12_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover12		1553
+	664274328	UIHover04	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover04_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover04		1679
+	684232418	UIHover01	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover01_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover01		1650
+	689297157	UIHover02	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover02_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover02		1736
+	812729061	UIHover03	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover03_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover03		1669
+	928114987	ShipCollision	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\ShipCollision_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship\ShipCollision		5119
+	996304061	UIHover11	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover11_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover11		1604
+	1048830653	UIHover07	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\iOS\SFX\UIHover07_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover07		1637
 

@@ -9,6 +9,9 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="UIHover" ID="{5D3A50C8-A31E-4AB9-B6D4-EDCD3624D34A}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UIClick" ID="{BA862C99-50BA-4C7F-8DCB-00606E520B00}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UIClickBack" ID="{BD7E4044-B7FD-4F9A-8977-8C1FE805145A}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ShipCollision" ID="{533CEFDC-CB7C-4FE9-952F-51C72E1906CE}" WorkUnitID="{1C7DA1FF-DCCF-4971-94ED-89C3D328E3F0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
