@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://body_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://rules.gd" type="Script" id=3]
 [ext_resource path="res://escape_shortcut.tres" type="ShortCut" id=4]
+[ext_resource path="res://cosmos_background.tscn" type="PackedScene" id=5]
 
 [node name="Rules" type="CanvasLayer"]
 script = ExtResource( 3 )
+
+[node name="CosmosBackground" parent="." instance=ExtResource( 5 )]
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5

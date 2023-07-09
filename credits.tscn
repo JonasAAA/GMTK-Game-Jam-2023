@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://body_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://credits.gd" type="Script" id=3]
 [ext_resource path="res://escape_shortcut.tres" type="ShortCut" id=4]
+[ext_resource path="res://cosmos_background.tscn" type="PackedScene" id=5]
 
 [node name="Credits" type="CanvasLayer"]
 script = ExtResource( 3 )
+
+[node name="CosmosBackground" parent="." instance=ExtResource( 5 )]
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
@@ -20,7 +23,8 @@ margin_bottom = 61.5
 custom_fonts/font = ExtResource( 1 )
 text = "Milda Venckutė - music
 Jonas Pukšta - programming
-Paulius Kinderis - art and sound effects"
+Paulius Kinderis - sound effects
+"
 
 [node name="Back" parent="." instance=ExtResource( 2 )]
 margin_left = 712.0

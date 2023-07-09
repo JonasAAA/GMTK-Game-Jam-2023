@@ -4,16 +4,12 @@
 [ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main_menu.gd" type="Script" id=3]
 [ext_resource path="res://heading_font.tres" type="DynamicFont" id=4]
-[ext_resource path="res://textures/space_background.png" type="Texture" id=5]
+[ext_resource path="res://cosmos_background.tscn" type="PackedScene" id=6]
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource( 3 )
 
-[node name="TextureRect" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 5 )
-expand = true
+[node name="CosmosBackground" parent="." instance=ExtResource( 6 )]
 
 [node name="Title" type="Label" parent="."]
 anchor_left = 0.5

@@ -23,6 +23,7 @@ color = Color( 0, 0, 0, 1 )
 [node name="bacgroundLayer" type="CanvasLayer" parent="."]
 
 [node name="Spaceship" parent="." instance=ExtResource( 1 )]
+mode = 2
 
 [node name="Camera" type="Camera2D" parent="."]
 current = true
