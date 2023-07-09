@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Bass Tweak_M.wav-260a8c9b56f2dbd8e6039e4ebf27c810.sample"
+
+[deps]
+
+source_file="res://wwise/Project/Originals/SFX/Medim_16Bars/Bass Tweak_M.wav"
+dest_files=[ "res://.import/Bass Tweak_M.wav-260a8c9b56f2dbd8e6039e4ebf27c810.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

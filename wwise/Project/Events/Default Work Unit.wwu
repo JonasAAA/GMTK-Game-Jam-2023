@@ -63,6 +63,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music" ID="{5DA5AD99-2C7F-4A8E-A8B7-497AE5F6ECAD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{0B117A62-B58A-488D-A4D7-C2F8D6D19C06}" ShortID="618484656">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{63F1260B-F8F8-4003-AC58-F9DBEDDA1363}" WorkUnitID="{6ECF8CAE-0858-44FE-8C1D-8F78126B191F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -16,11 +16,139 @@
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1492361653" Language="SFX" Hash="1237270907">
+		<SoundBank Id="1492361653" Language="SFX" Hash="3924115197">
 			<ObjectPath>\SoundBanks\Default Work Unit\Sounds</ObjectPath>
 			<ShortName>Sounds</ShortName>
 			<Path>1492361653.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music">
+					<IncludedMemoryFiles>
+						<File Id="127286392" Language="SFX">
+							<ShortName>Calm_34Bars\Drops.wav</ShortName>
+							<Path>SFX\Calm_34Bars\Drops_0946E92A.wem</Path>
+						</File>
+						<File Id="152323813" Language="SFX">
+							<ShortName>Calm_29Bars\Drops.wav</ShortName>
+							<Path>SFX\Calm_29Bars\Drops_0946E92A.wem</Path>
+						</File>
+						<File Id="329666929" Language="SFX">
+							<ShortName>Calm_29Bars\AmbientPiano.wav</ShortName>
+							<Path>SFX\Calm_29Bars\AmbientPiano_0946E92A.wem</Path>
+						</File>
+						<File Id="401167668" Language="SFX">
+							<ShortName>Medim_16Bars\Bass_L.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Bass_L_0946E92A.wem</Path>
+						</File>
+						<File Id="536732790" Language="SFX">
+							<ShortName>Medim_16Bars\AmbientPiano2.wav</ShortName>
+							<Path>SFX\Medim_16Bars\AmbientPiano2_0946E92A.wem</Path>
+						</File>
+						<File Id="632094472" Language="SFX">
+							<ShortName>Calm_34Bars\AmbientPiano.wav</ShortName>
+							<Path>SFX\Calm_34Bars\AmbientPiano_0946E92A.wem</Path>
+						</File>
+						<File Id="633994936" Language="SFX">
+							<ShortName>Medim_16Bars\Impact_M.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Impact_M_0946E92A.wem</Path>
+						</File>
+						<File Id="656561526" Language="SFX">
+							<ShortName>Medim_16Bars\AmbientPiano.wav</ShortName>
+							<Path>SFX\Medim_16Bars\AmbientPiano_0946E92A.wem</Path>
+						</File>
+						<File Id="683739745" Language="SFX">
+							<ShortName>Calm_34Bars\BrokenBells.wav</ShortName>
+							<Path>SFX\Calm_34Bars\BrokenBells_0946E92A.wem</Path>
+						</File>
+						<File Id="686015885" Language="SFX">
+							<ShortName>Medim_16Bars\Bass Tweak_M.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Bass Tweak_M_0946E92A.wem</Path>
+						</File>
+						<File Id="747958433" Language="SFX">
+							<ShortName>Medim_16Bars\Bass Tweak_H.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Bass Tweak_H_0946E92A.wem</Path>
+						</File>
+						<File Id="794347783" Language="SFX">
+							<ShortName>Medim_16Bars\Drops.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Drops_0946E92A.wem</Path>
+						</File>
+						<File Id="851221325" Language="SFX">
+							<ShortName>Calm_29Bars\BrokenBells.wav</ShortName>
+							<Path>SFX\Calm_29Bars\BrokenBells_0946E92A.wem</Path>
+						</File>
+						<File Id="867703324" Language="SFX">
+							<ShortName>Calm_34Bars\BassB.wav</ShortName>
+							<Path>SFX\Calm_34Bars\BassB_0946E92A.wem</Path>
+						</File>
+						<File Id="892409825" Language="SFX">
+							<ShortName>Medim_16Bars\Sweep.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Sweep_0946E92A.wem</Path>
+						</File>
+						<File Id="943949114" Language="SFX">
+							<ShortName>Medim_16Bars\BrokenBells.wav</ShortName>
+							<Path>SFX\Medim_16Bars\BrokenBells_0946E92A.wem</Path>
+						</File>
+						<File Id="946856674" Language="SFX">
+							<ShortName>Medim_16Bars\Violins_I.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Violins_I_0946E92A.wem</Path>
+						</File>
+						<File Id="963367086" Language="SFX">
+							<ShortName>Calm_29Bars\AsteroidDrones.wav</ShortName>
+							<Path>SFX\Calm_29Bars\AsteroidDrones_0946E92A.wem</Path>
+						</File>
+						<File Id="993716181" Language="SFX">
+							<ShortName>Medim_16Bars\Bass_M.wav</ShortName>
+							<Path>SFX\Medim_16Bars\Bass_M_0946E92A.wem</Path>
+						</File>
+						<File Id="998539980" Language="SFX">
+							<ShortName>Calm_29Bars\DoubleBass.wav</ShortName>
+							<Path>SFX\Calm_29Bars\DoubleBass_0946E92A.wem</Path>
+						</File>
+						<File Id="1003360698" Language="SFX">
+							<ShortName>Calm_29Bars\SpookyKeys.wav</ShortName>
+							<Path>SFX\Calm_29Bars\SpookyKeys_0946E92A.wem</Path>
+						</File>
+						<File Id="1004537122" Language="SFX">
+							<ShortName>Calm_34Bars\Sweep.wav</ShortName>
+							<Path>SFX\Calm_34Bars\Sweep_0946E92A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{3FB284A7-56A6-499C-91ED-7252B3952C43}">
+							<Media>
+								<File Id="127286392"/>
+								<File Id="632094472"/>
+								<File Id="683739745"/>
+								<File Id="867703324"/>
+								<File Id="1004537122"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{67FE7522-F8B0-43CE-A481-6BDBB6E51562}">
+							<Media>
+								<File Id="401167668"/>
+								<File Id="536732790"/>
+								<File Id="633994936"/>
+								<File Id="656561526"/>
+								<File Id="686015885"/>
+								<File Id="747958433"/>
+								<File Id="794347783"/>
+								<File Id="892409825"/>
+								<File Id="943949114"/>
+								<File Id="946856674"/>
+								<File Id="993716181"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{419EE590-7F9B-4D41-A6FB-2D1B6E3DA05D}">
+							<Media>
+								<File Id="152323813"/>
+								<File Id="329666929"/>
+								<File Id="851221325"/>
+								<File Id="963367086"/>
+								<File Id="998539980"/>
+								<File Id="1003360698"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3850714037" Name="ShipCollision" ObjectPath="\Events\Default Work Unit\ShipCollision">
 					<IncludedMemoryFiles>
 						<File Id="928114987" Language="SFX">
@@ -33,7 +161,7 @@
 					<IncludedMemoryFiles>
 						<File Id="550121790" Language="SFX">
 							<ShortName>UIClick.wav</ShortName>
-							<Path>SFX\UIClick_5A3CE1E2.wem</Path>
+							<Path>SFX\UIClick_B546A857.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,7 +169,7 @@
 					<IncludedMemoryFiles>
 						<File Id="409328877" Language="SFX">
 							<ShortName>UIClickBack.wav</ShortName>
-							<Path>SFX\UIClickBack_C359BA94.wem</Path>
+							<Path>SFX\UIClickBack_521CAEC9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -102,6 +230,22 @@
 				<GameParameter Id="640949982" Name="Speed" ObjectPath="\Game Parameters\Default Work Unit\Speed"/>
 				<GameParameter Id="2792801345" Name="Mass" ObjectPath="\Game Parameters\Default Work Unit\Mass"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="308635872" Name="Progress" ObjectPath="\Switches\Default Work Unit\Progress" GUID="{9DF7AC6E-CE57-4F18-B886-8C7C545867DD}">
+					<Switches>
+						<Switch Id="545371365" Name="Low" ObjectPath="\Switches\Default Work Unit\Progress\Low" GUID="{3FB284A7-56A6-499C-91ED-7252B3952C43}"/>
+						<Switch Id="1182670505" Name="Mid" ObjectPath="\Switches\Default Work Unit\Progress\Mid" GUID="{67FE7522-F8B0-43CE-A481-6BDBB6E51562}"/>
+						<Switch Id="766521211" Name="Zero" ObjectPath="\Switches\Default Work Unit\Progress\Zero" GUID="{419EE590-7F9B-4D41-A6FB-2D1B6E3DA05D}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2470328564" Name="Intensity" ObjectPath="\Switches\Default Work Unit\Intensity" GUID="{148790FD-2313-45D6-A54C-5AA5455691E6}">
+					<Switches>
+						<Switch Id="1846755610" Name="Small" ObjectPath="\Switches\Default Work Unit\Intensity\Small" GUID="{F2E4C69E-712F-4EF3-9AAC-FF4205053B22}"/>
+						<Switch Id="647611021" Name="Big" ObjectPath="\Switches\Default Work Unit\Intensity\Big" GUID="{D3602D25-648D-4B7C-B35A-7E92CB33D48D}"/>
+						<Switch Id="2849147824" Name="Medium" ObjectPath="\Switches\Default Work Unit\Intensity\Medium" GUID="{5739D6E0-0CA6-4791-BF76-FDFE8787172A}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

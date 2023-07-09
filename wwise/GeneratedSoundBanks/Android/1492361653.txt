@@ -3,6 +3,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	2807303240	UIClickBack			\Default Work Unit\UIClickBack	
 	3164408517	UIClick			\Default Work Unit\UIClick	
 	3850714037	ShipCollision			\Default Work Unit\ShipCollision	
+	3991942870	Music			\Default Work Unit\Music	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	308635872	Progress			\Default Work Unit\Progress	
+
+Switch	ID	Name	Switch Group			Notes
+	545371365	Low	Progress			
+	766521211	Zero	Progress			
+	1182670505	Mid	Progress			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	640949982	Speed			\Default Work Unit\Speed	
@@ -11,17 +20,39 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	55605163	UIHover10	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover10_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover10		1588
 	95023292	UIHover06	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover06_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover06		1738
+	127286392	Drops	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_34Bars\Drops_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Low\Calm_34Bars\Drops		883662
+	152323813	Drops	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\Drops_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\Drops		832663
 	155153333	UIHover05	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover05_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover05		1797
-	409328877	UIClickBack	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClickBack_C359BA94.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClickBack		1948
+	329666929	AmbientPiano	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\AmbientPiano_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\AmbientPiano		837519
+	401167668	Bass	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Bass_L_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Bass		405939
+	409328877	UIClickBack	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClickBack_521CAEC9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClickBack		1948
 	410179348	UIHover09	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover09_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover09		1588
 	427398932	UIHover08	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover08_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover08		1643
-	550121790	UIClick	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClick_5A3CE1E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClick		2881
+	536732790	AmbientPiano	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\AmbientPiano2_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\AmbientPiano		448671
+	550121790	UIClick	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClick_B546A857.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClick		2881
 	568945613	UIHover12	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover12_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover12		1578
+	632094472	AmbientPiano	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_34Bars\AmbientPiano_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Low\Calm_34Bars\AmbientPiano		877980
+	633994936	Impact	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Impact_M_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Impact		62070
+	656561526	AmbientPiano	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\AmbientPiano_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\AmbientPiano		511663
 	664274328	UIHover04	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover04_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover04		1775
+	683739745	BrokenBells	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_34Bars\BrokenBells_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Low\Calm_34Bars\BrokenBells		779641
 	684232418	UIHover01	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover01_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover01		1771
+	686015885	Bass Tweak	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Bass Tweak_M_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Bass Tweak		492280
 	689297157	UIHover02	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover02_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover02		1617
+	747958433	Bass Tweak	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Bass Tweak_H_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Bass Tweak		525953
+	794347783	Drops	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Drops_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Drops		437147
 	812729061	UIHover03	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover03_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover03		1777
+	851221325	BrokenBells	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\BrokenBells_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\BrokenBells		547219
+	867703324	BassB	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_34Bars\BassB_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Low\Calm_34Bars\BassB		791332
+	892409825	Sweep	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Sweep_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Sweep		485646
 	928114987	ShipCollision	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\ShipCollision_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship\ShipCollision		5119
+	943949114	BrokenBells	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\BrokenBells_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\BrokenBells		460082
+	946856674	Violins_I	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Violins_I_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Violins_I		509186
+	963367086	AsteroidDrones	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\AsteroidDrones_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\AsteroidDrones		843643
+	993716181	Bass	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Medim_16Bars\Bass_M_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Medium\Medium_16Bars\Bass		346495
 	996304061	UIHover11	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover11_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover11		1651
+	998539980	DoubleBass	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\DoubleBass_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\DoubleBass		943915
+	1003360698	SpookyKeys	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_29Bars\SpookyKeys_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Calm_29Bars\SpookyKeys		471630
+	1004537122	Sweep	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\Calm_34Bars\Sweep_0946E92A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Low\Calm_34Bars\Sweep		948093
 	1048830653	UIHover07	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover07_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover07		1629
 

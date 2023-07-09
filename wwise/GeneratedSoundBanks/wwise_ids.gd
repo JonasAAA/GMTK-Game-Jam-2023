@@ -2,16 +2,18 @@ class_name AK
 
 class EVENTS:
 
-	const UICLICKBACK = 2807303240 
-	const UICLICK = 3164408517 
-	const SHIPCOLLISION = 3850714037 
+	const MUSIC = 3991942870 
 	const UIHOVER = 199363535 
+	const UICLICKBACK = 2807303240 
+	const SHIPCOLLISION = 3850714037 
+	const UICLICK = 3164408517 
 
 	const _dict = { 
+	 "MUSIC": MUSIC,
+	 "UIHOVER": UIHOVER,
 	 "UICLICKBACK": UICLICKBACK,
-	 "UICLICK": UICLICK,
 	 "SHIPCOLLISION": SHIPCOLLISION,
-	 "UIHOVER": UIHOVER
+	 "UICLICK": UICLICK
 	} 
 
 class STATES:
@@ -20,16 +22,51 @@ class STATES:
 
 class SWITCHES:
 
-	const _dict = {} 
+	class INTENSITY:
+		const GROUP = 2470328564 
+
+		class SWITCH:
+			const SMALL = 1846755610 
+			const BIG = 647611021 
+			const MEDIUM = 2849147824 
+
+	class PROGRESS:
+		const GROUP = 308635872 
+
+		class SWITCH:
+			const MID = 1182670505 
+			const LOW = 545371365 
+			const ZERO = 766521211 
+
+	const _dict = { 
+		"INTENSITY": {
+			"GROUP": 2470328564,
+			"SWITCH": {
+				"SMALL": 1846755610,
+				"BIG": 647611021,
+				"MEDIUM": 2849147824
+			} 
+		}, 
+		"PROGRESS": {
+			"GROUP": 308635872,
+			"SWITCH": {
+				"MID": 1182670505,
+				"LOW": 545371365,
+				"ZERO": 766521211,
+			} 
+		} 
+	} 
 
 class GAME_PARAMETERS:
 
 	const MASS = 2792801345 
 	const SPEED = 640949982 
+	const PROGRESS = 308635872 
 
 	const _dict = { 
 	 "MASS": MASS,
-	 "SPEED": SPEED
+	 "SPEED": SPEED,
+	 "PROGRESS": PROGRESS
 	} 
 
 class TRIGGERS:
@@ -60,12 +97,12 @@ class AUX_BUSSES:
 
 class AUDIO_DEVICES:
 
-	const NO_OUTPUT = 2317455096 
 	const SYSTEM = 3859886410 
+	const NO_OUTPUT = 2317455096 
 
 	const _dict = { 
-	 "NO OUTPUT": NO_OUTPUT,
-	 "SYSTEM": SYSTEM
+	 "SYSTEM": SYSTEM,
+	 "NO OUTPUT": NO_OUTPUT
 	} 
 
 class EXTERNAL_SOURCES:

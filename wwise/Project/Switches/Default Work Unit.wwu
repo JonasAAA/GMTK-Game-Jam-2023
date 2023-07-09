@@ -7,7 +7,14 @@
 					<ChildrenList>
 						<Switch Name="Low" ID="{3FB284A7-56A6-499C-91ED-7252B3952C43}"/>
 						<Switch Name="Mid" ID="{67FE7522-F8B0-43CE-A481-6BDBB6E51562}"/>
-						<Switch Name="High" ID="{D54803CC-BFDB-4D12-B5E9-3075CAE9CA11}"/>
+						<Switch Name="Zero" ID="{419EE590-7F9B-4D41-A6FB-2D1B6E3DA05D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Intensity" ID="{148790FD-2313-45D6-A54C-5AA5455691E6}">
+					<ChildrenList>
+						<Switch Name="Small" ID="{F2E4C69E-712F-4EF3-9AAC-FF4205053B22}"/>
+						<Switch Name="Big" ID="{D3602D25-648D-4B7C-B35A-7E92CB33D48D}"/>
+						<Switch Name="Medium" ID="{5739D6E0-0CA6-4791-BF76-FDFE8787172A}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

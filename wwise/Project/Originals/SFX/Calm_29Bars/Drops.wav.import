@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Drops.wav-b5131255b7e34eca5fb07bce7bc6f430.sample"
+
+[deps]
+
+source_file="res://wwise/Project/Originals/SFX/Calm_29Bars/Drops.wav"
+dest_files=[ "res://.import/Drops.wav-b5131255b7e34eca5fb07bce7bc6f430.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
