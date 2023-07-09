@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3066223675">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3220181553">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>1355168291.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1492361653" Language="SFX" Hash="2095587764">
+		<SoundBank Id="1492361653" Language="SFX" Hash="1237270907">
 			<ObjectPath>\SoundBanks\Default Work Unit\Sounds</ObjectPath>
 			<ShortName>Sounds</ShortName>
 			<Path>1492361653.bnk</Path>
@@ -33,7 +33,7 @@
 					<IncludedMemoryFiles>
 						<File Id="550121790" Language="SFX">
 							<ShortName>UIClick.wav</ShortName>
-							<Path>SFX\UIClick_DD6AEF82.wem</Path>
+							<Path>SFX\UIClick_5A3CE1E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,7 +41,7 @@
 					<IncludedMemoryFiles>
 						<File Id="409328877" Language="SFX">
 							<ShortName>UIClickBack.wav</ShortName>
-							<Path>SFX\UIClickBack_3955A3DE.wem</Path>
+							<Path>SFX\UIClickBack_C359BA94.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -49,51 +49,51 @@
 					<IncludedMemoryFiles>
 						<File Id="55605163" Language="SFX">
 							<ShortName>UIHover10.wav</ShortName>
-							<Path>SFX\UIHover10_3955A3DE.wem</Path>
+							<Path>SFX\UIHover10_AF5784F1.wem</Path>
 						</File>
 						<File Id="95023292" Language="SFX">
 							<ShortName>UIHover06.wav</ShortName>
-							<Path>SFX\UIHover06_3955A3DE.wem</Path>
+							<Path>SFX\UIHover06_AF5784F1.wem</Path>
 						</File>
 						<File Id="155153333" Language="SFX">
 							<ShortName>UIHover05.wav</ShortName>
-							<Path>SFX\UIHover05_3955A3DE.wem</Path>
+							<Path>SFX\UIHover05_AF5784F1.wem</Path>
 						</File>
 						<File Id="410179348" Language="SFX">
 							<ShortName>UIHover09.wav</ShortName>
-							<Path>SFX\UIHover09_3955A3DE.wem</Path>
+							<Path>SFX\UIHover09_AF5784F1.wem</Path>
 						</File>
 						<File Id="427398932" Language="SFX">
 							<ShortName>UIHover08.wav</ShortName>
-							<Path>SFX\UIHover08_3955A3DE.wem</Path>
+							<Path>SFX\UIHover08_AF5784F1.wem</Path>
 						</File>
 						<File Id="568945613" Language="SFX">
 							<ShortName>UIHover12.wav</ShortName>
-							<Path>SFX\UIHover12_3955A3DE.wem</Path>
+							<Path>SFX\UIHover12_AF5784F1.wem</Path>
 						</File>
 						<File Id="664274328" Language="SFX">
 							<ShortName>UIHover04.wav</ShortName>
-							<Path>SFX\UIHover04_3955A3DE.wem</Path>
+							<Path>SFX\UIHover04_AF5784F1.wem</Path>
 						</File>
 						<File Id="684232418" Language="SFX">
 							<ShortName>UIHover01.wav</ShortName>
-							<Path>SFX\UIHover01_3955A3DE.wem</Path>
+							<Path>SFX\UIHover01_AF5784F1.wem</Path>
 						</File>
 						<File Id="689297157" Language="SFX">
 							<ShortName>UIHover02.wav</ShortName>
-							<Path>SFX\UIHover02_3955A3DE.wem</Path>
+							<Path>SFX\UIHover02_AF5784F1.wem</Path>
 						</File>
 						<File Id="812729061" Language="SFX">
 							<ShortName>UIHover03.wav</ShortName>
-							<Path>SFX\UIHover03_3955A3DE.wem</Path>
+							<Path>SFX\UIHover03_AF5784F1.wem</Path>
 						</File>
 						<File Id="996304061" Language="SFX">
 							<ShortName>UIHover11.wav</ShortName>
-							<Path>SFX\UIHover11_3955A3DE.wem</Path>
+							<Path>SFX\UIHover11_AF5784F1.wem</Path>
 						</File>
 						<File Id="1048830653" Language="SFX">
 							<ShortName>UIHover07.wav</ShortName>
-							<Path>SFX\UIHover07_3955A3DE.wem</Path>
+							<Path>SFX\UIHover07_AF5784F1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -170,7 +170,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -185,9 +185,11 @@
 							<ChildrenList>
 								<AudioFileSource Name="UIClick" ID="{CABF6D71-ADED-48CD-BDA8-21F26195DBE3}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.378700657894737"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0789473684210526"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.172697368421053"/>
+										<Property Name="FadeOutShape" Type="int16" Value="0"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.609375"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.234375"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>UIClick.wav</AudioFile>
@@ -204,6 +206,9 @@
 						<Sound Name="UIClickBack" ID="{15AFD99B-60DE-49D1-BC45-60FFC4FF901C}" ShortID="433485200">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-280</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{0EC1D37B-4AB0-4331-9BFB-1E2C1EEE43B2}">
@@ -218,7 +223,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -232,6 +237,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="UIClickBack" ID="{499E30F4-D98A-473A-980E-48CEC047B2AC}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0424890350877193"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.111705043859649"/>
+										<Property Name="FadeOutShape" Type="int16" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.170641447368421"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>UIClickBack.wav</AudioFile>
 									<MediaIDList>
@@ -248,6 +260,9 @@
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-960</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{10DF46E1-1604-446C-A56B-D145A1B8481A}">
@@ -261,10 +276,29 @@
 									</ModifierList>
 								</Property>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{43BD3F91-D473-4614-9805-188D9BAF5277}" WorkUnitID="{DC78605F-64B1-468E-B552-AF6F7342C717}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Peak Limiter (Custom)" ID="{BCDE1D2C-257E-480C-8017-69E33557CA33}" ShortID="325582025" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+											<PropertyList>
+												<Property Name="Threshold" Type="Real32" Value="-12"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{42445D6D-448C-40AD-983D-470015565B3F}"/>
