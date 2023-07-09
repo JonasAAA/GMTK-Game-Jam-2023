@@ -61,6 +61,7 @@ margin_top = 928.0
 margin_right = 1212.0
 margin_bottom = 1028.0
 text = "Exit"
+is_forward = false
 
 [connection signal="tree_entered" from="." to="." method="_on_MainMenu_tree_entered"]
 [connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]

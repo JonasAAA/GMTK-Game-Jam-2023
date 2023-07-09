@@ -12,15 +12,9 @@ const asteroid_despawn_dist = 3000
 var start_time_msec: int
 var score: int = 0
 var playing: bool = false
-var wwise_init_done: bool = false
 
 func _ready() -> void:
-	if not wwise_init_done:
-		Wwise.load_bank_id(AK.BANKS.INIT)
-		Wwise.load_bank_id(AK.BANKS.SOUNDS)
-		Wwise.register_listener(self)
-		wwise_init_done = true
-	
+	Wwise.register_game_obj(self, "Level")
 	random = RandomNumberGenerator.new()
 	random.seed = OS.get_ticks_msec()
 	print("random seed ", random.seed)
@@ -77,7 +71,8 @@ func remove_far_asteroids() -> void:
 			next_asteroid_array.append(asteroid)
 	asteroids = next_asteroid_array
 
-
-func _on_LevelUI_pause_pressed():
+func _on_LevelUI_pause_pressed() -> void:
+	# this cureently doesn't work as all sounds are paused as well
+#	Wwise.post_event_id(AK.EVENTS.UICLICKBACK, self)
 	get_tree().paused = true
 	pause_ui.show()

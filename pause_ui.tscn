@@ -32,6 +32,7 @@ margin_top = 936.0
 margin_right = 1212.0
 margin_bottom = 1036.0
 text = "Exit"
+is_forward = false
 
 [connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

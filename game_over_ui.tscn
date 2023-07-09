@@ -40,6 +40,7 @@ margin_right = 1212.0
 margin_bottom = 1036.0
 shortcut = ExtResource( 4 )
 text = "Main Menu"
+is_forward = false
 
 [connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
 [connection signal="pressed" from="MainMenu" to="." method="_on_MainMenu_pressed"]

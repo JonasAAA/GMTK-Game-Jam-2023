@@ -29,5 +29,6 @@ margin_right = 1212.0
 margin_bottom = 852.0
 shortcut = ExtResource( 4 )
 text = "Back"
+is_forward = false
 
 [connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
