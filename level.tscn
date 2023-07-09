@@ -47,4 +47,5 @@ motion_mirroring = Vector2( 0, 2160 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 6 )
 
+[connection signal="tree_entered" from="." to="." method="_on_Level_tree_entered"]
 [connection signal="pause_pressed" from="LevelUI" to="." method="_on_LevelUI_pause_pressed"]

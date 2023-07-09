@@ -15,7 +15,6 @@ var playing: bool = false
 
 func _ready() -> void:
 	Wwise.register_game_obj(self, "Level")
-	print("set switch ", Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.LOW, self))
 	random = RandomNumberGenerator.new()
 	random.seed = OS.get_ticks_msec()
 	print("random seed ", random.seed)
@@ -85,3 +84,6 @@ func _on_LevelUI_pause_pressed() -> void:
 #	Wwise.post_event_id(AK.EVENTS.UICLICKBACK, self)
 	get_tree().paused = true
 	pause_ui.show()
+
+func _on_Level_tree_entered() -> void:
+	print("set switch ", Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.LOW, self))
