@@ -1,13 +1,26 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://spaceship.tscn" type="PackedScene" id=1]
 [ext_resource path="res://level.gd" type="Script" id=2]
 [ext_resource path="res://game_over_ui.tscn" type="PackedScene" id=3]
 [ext_resource path="res://level_ui.tscn" type="PackedScene" id=4]
 [ext_resource path="res://pause_ui.tscn" type="PackedScene" id=5]
+[ext_resource path="res://textures/space_background.png" type="Texture" id=6]
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 2 )
+
+[node name="Bacground" type="ColorRect" parent="."]
+margin_left = -500000.0
+margin_top = -500000.0
+margin_right = 500000.0
+margin_bottom = 500000.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="bacgroundLayer" type="CanvasLayer" parent="."]
 
 [node name="Spaceship" parent="." instance=ExtResource( 1 )]
 
@@ -22,5 +35,15 @@ visible = false
 
 [node name="GameOverUI" parent="." instance=ExtResource( 3 )]
 visible = false
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 0, 2160 )
+
+[node name="Background" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2( 4, 4 )
+texture = ExtResource( 6 )
 
 [connection signal="pause_pressed" from="LevelUI" to="." method="_on_LevelUI_pause_pressed"]

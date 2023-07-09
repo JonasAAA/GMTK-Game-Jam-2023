@@ -1,12 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://title_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://custom_button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://main_menu.gd" type="Script" id=3]
 [ext_resource path="res://heading_font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://textures/space_background.png" type="Texture" id=5]
 
 [node name="MainMenu" type="CanvasLayer"]
 script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+expand = true
 
 [node name="Title" type="Label" parent="."]
 anchor_left = 0.5
@@ -16,7 +23,7 @@ margin_top = 88.0
 margin_right = 472.0
 margin_bottom = 272.0
 custom_fonts/font = ExtResource( 1 )
-text = "Game Title"
+text = "Rumble Space"
 align = 1
 valign = 1
 
