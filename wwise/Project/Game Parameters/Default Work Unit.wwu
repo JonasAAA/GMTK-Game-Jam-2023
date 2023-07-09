@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<GameParameter Name="Mass" ID="{544616C6-950B-4ED3-916E-9796348F362D}"/>
 				<GameParameter Name="Speed" ID="{EE69D1F2-2143-487E-880E-E673FD7FC357}"/>
+				<GameParameter Name="Progress" ID="{CBDA274C-A820-4612-A274-C61B4A7B255C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

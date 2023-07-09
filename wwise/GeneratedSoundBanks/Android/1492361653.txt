@@ -9,19 +9,19 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2792801345	Mass			\Default Work Unit\Mass	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	55605163	UIHover10	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover10_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover10		1569
-	95023292	UIHover06	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover06_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover06		1668
-	155153333	UIHover05	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover05_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover05		1728
-	409328877	UIClickBack	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClickBack_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClickBack		5177
-	410179348	UIHover09	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover09_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover09		1574
-	427398932	UIHover08	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover08_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover08		1586
-	550121790	UIClick	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClick_DD6AEF82.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClick		6036
-	568945613	UIHover12	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover12_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover12		1553
-	664274328	UIHover04	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover04_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover04		1679
-	684232418	UIHover01	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover01_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover01		1650
-	689297157	UIHover02	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover02_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover02		1736
-	812729061	UIHover03	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover03_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover03		1669
+	55605163	UIHover10	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover10_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover10		1588
+	95023292	UIHover06	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover06_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover06		1738
+	155153333	UIHover05	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover05_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover05		1797
+	409328877	UIClickBack	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClickBack_C359BA94.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClickBack		1948
+	410179348	UIHover09	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover09_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover09		1588
+	427398932	UIHover08	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover08_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover08		1643
+	550121790	UIClick	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIClick_5A3CE1E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIClick		2881
+	568945613	UIHover12	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover12_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover12		1578
+	664274328	UIHover04	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover04_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover04		1775
+	684232418	UIHover01	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover01_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover01		1771
+	689297157	UIHover02	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover02_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover02		1617
+	812729061	UIHover03	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover03_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover03		1777
 	928114987	ShipCollision	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\ShipCollision_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ship\ShipCollision		5119
-	996304061	UIHover11	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover11_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover11		1604
-	1048830653	UIHover07	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover07_3955A3DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover07		1637
+	996304061	UIHover11	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover11_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover11		1651
+	1048830653	UIHover07	C:\Users\vaida\Documents\GitHub\GMTK-Game-Jam-2023\wwise\Project\.cache\Android\SFX\UIHover07_AF5784F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UIHover\UIHover07		1629
 
