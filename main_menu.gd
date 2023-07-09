@@ -22,4 +22,3 @@ func _on_Credits_pressed() -> void:
 func _on_Exit_pressed() -> void:
 	GlobalState.save_high_score()
 	get_tree().quit()
-
