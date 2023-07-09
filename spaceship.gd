@@ -5,8 +5,10 @@ export var health = 100
 export var target_speed = 200
 const drag = 10
 const thrust_vel = 100
+var close_asteroid_count: int
 
 func _ready() -> void:
+	close_asteroid_count = 0
 	Wwise.register_game_obj(self, "Spaceship")
 
 func _on_Spaceship_body_entered(body: Node) -> void:
@@ -22,6 +24,13 @@ func _on_Spaceship_body_entered(body: Node) -> void:
 	Wwise.post_event_id(AK.EVENTS.SHIPCOLLISION, self)
 
 func _integrate_forces(state: Physics2DDirectBodyState) -> void:
+	print("close_asteroid_count ", close_asteroid_count)
+	if close_asteroid_count <= 5:
+		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.SMALL, self)
+	elif close_asteroid_count <= 10:
+		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.MEDIUM, self)
+	else:
+		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, AK.SWITCHES.INTENSITY.SWITCH.BIG, self)
 	if health < 0:
 		return
 #	if state.linear_velocity.x
@@ -38,3 +47,12 @@ func _integrate_forces(state: Physics2DDirectBodyState) -> void:
 		
 	var new_right_speed = sign(right_speed) * max(0, abs(right_speed) - drag * state.step)
 	state.linear_velocity = Vector2.UP * new_up_speed + Vector2.RIGHT * new_right_speed
+
+
+func _on_Area2D_body_entered(body: Node) -> void:
+	if body is Asteroid:
+		close_asteroid_count += 1
+
+func _on_Area2D_body_exited(body: Node) -> void:
+	if body is Asteroid:
+		close_asteroid_count -= 1
