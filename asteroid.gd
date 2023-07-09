@@ -33,8 +33,9 @@ func initialize(start_pos: Vector2, start_vel: Vector2, start_angular_vel: float
 	collision_shape.shape.radius = shape_start_radius * scale
 
 func get_mouse_local_pos() -> Vector2:
+	return get_global_mouse_position() - position
 #	print("mouse local pos ", get_viewport().get_mouse_position())
-	return get_viewport().get_mouse_position() - position
+#	return get_viewport().get_mouse_position() - position
 
 func get_cur_time_msec() -> int:
 	return OS.get_ticks_msec()
