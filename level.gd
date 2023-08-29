@@ -12,6 +12,7 @@ const asteroid_despawn_dist = 3000
 var start_time_msec: int
 var score: int = 0
 var playing: bool = false
+var spawn_coeff: float
 
 func _ready() -> void:
 	random = RandomNumberGenerator.new()
@@ -24,6 +25,7 @@ func _ready() -> void:
 	pause_ui.hide()
 	start_time_msec = OS.get_ticks_msec()
 	level_ui.show()
+	spawn_coeff = 0.1
 
 func _get_progress() -> int:
 	if (not playing) or get_tree().paused:
@@ -39,10 +41,14 @@ func _physics_process(_delta: float) -> void:
 	_wwise_update_progress()
 	if not playing:
 		return
+	var old_spawn_coeff = spawn_coeff
+	spawn_coeff += _delta * 0.01
+	if floor(old_spawn_coeff / 0.1) < floor(spawn_coeff / 0.1):
+		print("spawn coeff increased to ", spawn_coeff)
 #	var num_asteroids_to_spawn: int = random.randi_range(0, 1)
 #	for i in num_asteroids_to_spawn:
 #		spawn_asteroid()
-	if random.randf() < 0.1 * abs(spaceship.linear_velocity.y) / spaceship.target_speed:
+	if random.randf() < spawn_coeff * abs(spaceship.linear_velocity.y) / spaceship.target_speed:
 		spawn_asteroid()
 	remove_far_asteroids()
 	camera.position = spaceship.position
@@ -67,11 +73,11 @@ func game_over() -> void:
 #	get_tree().reload_current_scene()
 
 func spawn_asteroid() -> void:
-	var width = pow(2, random.randf_range(3, 7))
+	var width = pow(2, random.randf_range(5, 7))
 	var mass = width * width / 10
 	#	print("mass ", mass)
-	var position: Vector2 = spaceship.position + random.randf_range(1000, 1100) * Vector2.UP.rotated(random.randf_range(-PI / 5, PI / 5))
-	var velocity: Vector2 = Vector2(random.randf_range(-10000, 10000), random.randf_range(-10000, 10000)) / mass
+	var position: Vector2 = spaceship.position + random.randf_range(1000, 1100) * Vector2.UP.rotated(random.randf_range(-PI, PI))
+	var velocity: Vector2 = (Vector2.UP * random.randf_range(500, 1000)).rotated(random.randf_range(0, 2 * PI)) / sqrt(width)
 	var angular_vel: float = random.randf_range(-1000, 1000) / mass
 	var asteroid: Asteroid = asteroid_template.instance()
 	add_child(asteroid)

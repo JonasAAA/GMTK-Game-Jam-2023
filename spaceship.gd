@@ -5,10 +5,10 @@ export var health = 100
 export var target_speed = 200
 const drag = 10
 const thrust_vel = 100
-const max_small_intensity_asteroids = 5 + 1
-const min_medium_intensity_asteroids = 5 - 1
-const max_medium_intensity_asteroids = 10 + 1
-const min_high_intensity_asteroids = 10 - 1
+const max_small_intensity_asteroids = 7 + 1
+const min_medium_intensity_asteroids = 7 - 1
+const max_medium_intensity_asteroids = 15 + 1
+const min_high_intensity_asteroids = 15 - 1
 var close_asteroid_count: int
 var cur_intensity: int
 
