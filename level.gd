@@ -17,19 +17,26 @@ func _ready() -> void:
 	random = RandomNumberGenerator.new()
 	random.seed = OS.get_ticks_msec()
 	print("random seed ", random.seed)
-#	get_tree().set_debug_collisions_hint(true) 
+	# get_tree().set_debug_collisions_hint(true) 
 	spaceship.position = Vector2.ZERO
 	spaceship.linear_velocity = Vector2.ZERO
 	game_over_ui.hide()
 	pause_ui.hide()
 	start_time_msec = OS.get_ticks_msec()
-	playing = true
 	level_ui.show()
 
+func _get_progress() -> int:
+	if (not playing) or get_tree().paused:
+		return AK.SWITCHES.PROGRESS.SWITCH.ZERO
+	if score < GlobalState.mid_progress_score:
+		return AK.SWITCHES.PROGRESS.SWITCH.LOW
+	return AK.SWITCHES.PROGRESS.SWITCH.MID
+
+func _wwise_update_progress() -> void:
+	GlobalState.wwise_set_switch_id(AK.SWITCHES.PROGRESS.GROUP, _get_progress(), GlobalState)
+
 func _physics_process(_delta: float) -> void:
-	if score > 200:
-		print("uinasfnaisnd")
-		Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.MID, self)
+	_wwise_update_progress()
 	if not playing:
 		return
 #	var num_asteroids_to_spawn: int = random.randi_range(0, 1)
@@ -40,7 +47,10 @@ func _physics_process(_delta: float) -> void:
 	remove_far_asteroids()
 	camera.position = spaceship.position
 	# warning-ignore:integer_division
+	var prev_score = score
 	score = (OS.get_ticks_msec() - start_time_msec) / 100
+	if prev_score < GlobalState.mid_progress_score && GlobalState.mid_progress_score <= score:
+		print("score reached ", GlobalState.mid_progress_score)
 	level_ui.update(int(spaceship.health), score)
 	if int(spaceship.health) == 0:
 		game_over()
@@ -49,8 +59,8 @@ func _physics_process(_delta: float) -> void:
 #	print(spaceship.linear_velocity)
 
 func game_over() -> void:
-	Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.ZERO, self)
 	playing = false
+	_wwise_update_progress()
 	level_ui.hide()
 	GlobalState.high_score = int(max(GlobalState.high_score, score))
 	game_over_ui.start("Game over\nScore {score}\nHigh score {high_score}".format({"score": score, "high_score": GlobalState.high_score}))
@@ -59,7 +69,7 @@ func game_over() -> void:
 func spawn_asteroid() -> void:
 	var width = pow(2, random.randf_range(3, 7))
 	var mass = width * width / 10
-#	print("mass ", mass)
+	#	print("mass ", mass)
 	var position: Vector2 = spaceship.position + random.randf_range(1000, 1100) * Vector2.UP.rotated(random.randf_range(-PI / 5, PI / 5))
 	var velocity: Vector2 = Vector2(random.randf_range(-10000, 10000), random.randf_range(-10000, 10000)) / mass
 	var angular_vel: float = random.randf_range(-1000, 1000) / mass
@@ -78,12 +88,14 @@ func remove_far_asteroids() -> void:
 	asteroids = next_asteroid_array
 
 func _on_LevelUI_pause_pressed() -> void:
-	Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.ZERO, self)
-	# this cureently doesn't work as all sounds are paused as well
-#	Wwise.post_event_id(AK.EVENTS.UICLICKBACK, self)
+	var cur_progress = _get_progress()
 	get_tree().paused = true
-	pause_ui.show()
+	_wwise_update_progress()
+	# this currently doesn't work as all sounds are paused as well
+	# GlobalState.wwise_post_event_id(AK.EVENTS.UICLICKBACK, self)
+	pause_ui.start_show(cur_progress)
 
 func _on_Level_tree_entered() -> void:
-	Wwise.register_game_obj(self, "Level")
-	Wwise.set_switch_id(AK.SWITCHES.PROGRESS.GROUP, AK.SWITCHES.PROGRESS.SWITCH.LOW, self)
+	playing = true
+	GlobalState.wwise_register_game_obj(self, "Level")
+	_wwise_update_progress()

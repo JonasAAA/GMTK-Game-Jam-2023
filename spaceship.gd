@@ -5,12 +5,17 @@ export var health = 100
 export var target_speed = 200
 const drag = 10
 const thrust_vel = 100
+const max_small_intensity_asteroids = 5 + 1
+const min_medium_intensity_asteroids = 5 - 1
+const max_medium_intensity_asteroids = 10 + 1
+const min_high_intensity_asteroids = 10 - 1
 var close_asteroid_count: int
-var last_intensity: int
+var cur_intensity: int
 
 func _ready() -> void:
 	close_asteroid_count = 0
-	Wwise.register_game_obj(self, "Spaceship")
+	set_intensity(AK.SWITCHES.INTENSITY.SWITCH.SMALL)
+	GlobalState.wwise_register_game_obj(self, "Spaceship")
 
 func _on_Spaceship_body_entered(body: Node) -> void:
 #	print("mass ", body.mass, " velocity diff ", body.linear_velocity.distance_to(linear_velocity))
@@ -20,27 +25,31 @@ func _on_Spaceship_body_entered(body: Node) -> void:
 	var wwise_mass = sqrt(body.mass)
 	var wwise_speed = body.linear_velocity.distance_to(linear_velocity) / 10
 	print(wwise_mass, " ", wwise_speed)
-	Wwise.set_rtpc_id(AK.GAME_PARAMETERS.MASS, wwise_mass)
-	Wwise.set_rtpc_id(AK.GAME_PARAMETERS.SPEED, wwise_speed)
-	Wwise.post_event_id(AK.EVENTS.SHIPCOLLISION, self)
+	GlobalState.wwise_set_rtpc_id(AK.GAME_PARAMETERS.MASS, wwise_mass, self)
+	GlobalState.wwise_set_rtpc_id(AK.GAME_PARAMETERS.SPEED, wwise_speed, self)
+	GlobalState.wwise_post_event_id(AK.EVENTS.SHIPCOLLISION, self)
 
 func set_intensity(new_intensity: int) -> void:
-	if new_intensity != last_intensity:
-		last_intensity = new_intensity
-		Wwise.set_switch_id(AK.SWITCHES.INTENSITY.GROUP, new_intensity, self)
+	cur_intensity = new_intensity
+	GlobalState.wwise_set_switch_id(AK.SWITCHES.INTENSITY.GROUP, new_intensity, GlobalState)
 
 func _integrate_forces(state: Physics2DDirectBodyState) -> void:
-	print("close_asteroid_count ", close_asteroid_count)
-	if close_asteroid_count <= 5:
-		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.SMALL)
-	elif close_asteroid_count <= 10:
-		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.MEDIUM)
+	if cur_intensity == AK.SWITCHES.INTENSITY.SWITCH.SMALL:
+		if close_asteroid_count > max_small_intensity_asteroids:
+			set_intensity(AK.SWITCHES.INTENSITY.SWITCH.MEDIUM)
+	elif cur_intensity == AK.SWITCHES.INTENSITY.SWITCH.MEDIUM:
+		if close_asteroid_count < min_medium_intensity_asteroids:
+			set_intensity(AK.SWITCHES.INTENSITY.SWITCH.SMALL)
+		elif close_asteroid_count > max_medium_intensity_asteroids:
+			set_intensity(AK.SWITCHES.INTENSITY.SWITCH.BIG)
+	elif cur_intensity == AK.SWITCHES.INTENSITY.SWITCH.BIG:
+		if close_asteroid_count < min_high_intensity_asteroids:
+			set_intensity(AK.SWITCHES.INTENSITY.SWITCH.MEDIUM)
 	else:
-		set_intensity(AK.SWITCHES.INTENSITY.SWITCH.BIG)
+		assert(false)
+
 	if health < 0:
 		return
-#	if state.linear_velocity.x
-	var ideal_vel = Vector2.UP * target_speed
 	var up_speed = Vector2.UP.dot(state.linear_velocity)
 	var right_speed = Vector2.RIGHT.dot(state.linear_velocity)
 	var new_up_speed: float
@@ -58,7 +67,9 @@ func _integrate_forces(state: Physics2DDirectBodyState) -> void:
 func _on_Area2D_body_entered(body: Node) -> void:
 	if body is Asteroid:
 		close_asteroid_count += 1
+		print("close_asteroid_count ", close_asteroid_count)
 
 func _on_Area2D_body_exited(body: Node) -> void:
 	if body is Asteroid:
 		close_asteroid_count -= 1
+		print("close_asteroid_count ", close_asteroid_count)
