@@ -9,8 +9,6 @@
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 2 )
-start_spawn_coeff = 1
-spawn_coeff_increase_speed = 1
 
 [node name="Bacground" type="ColorRect" parent="."]
 margin_left = -500000.0

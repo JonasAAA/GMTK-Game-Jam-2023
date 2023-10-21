@@ -27,7 +27,7 @@ func init(start_spawn_coeff: float, spawn_coeff_increase_speed: float) -> void:
 
 func _on_Spaceship_body_entered(body: Node) -> void:
 #	print("mass ", body.mass, " velocity diff ", body.linear_velocity.distance_to(linear_velocity))
-	health -= body.mass * body.linear_velocity.distance_to(linear_velocity) / 1000
+	health -= body.mass * body.linear_velocity.distance_to(linear_velocity) / 3000
 	health = max(0, health)
 	
 	var wwise_mass = sqrt(body.mass)

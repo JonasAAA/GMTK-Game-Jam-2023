@@ -14,6 +14,7 @@ var score: int = 0
 var playing: bool = false
 export(float, 0.5, 2) var start_spawn_coeff: float = 1
 export(float, 0.5, 2) var spawn_coeff_increase_speed: float = 1
+export(float, 0.5, 2) var asteroid_radius: float = 1
 var spawn_coeff: float
 
 func _ready() -> void:
@@ -76,11 +77,11 @@ func game_over() -> void:
 #	get_tree().reload_current_scene()
 
 func spawn_asteroid() -> void:
-	var width = pow(2, random.randf_range(5, 7))
-	var mass = width * width / 10
+	var width = pow(2, random.randf_range(6, 7.5)) * asteroid_radius
+	var mass = width * width / 10 / asteroid_radius / asteroid_radius
 	#	print("mass ", mass)
 	var position: Vector2 = spaceship.position + random.randf_range(1000, 1100) * Vector2.UP.rotated(random.randf_range(-PI, PI))
-	var velocity: Vector2 = (Vector2.UP * random.randf_range(500, 1000)).rotated(random.randf_range(0, 2 * PI)) / sqrt(width)
+	var velocity: Vector2 = (Vector2.UP * random.randf_range(500, 1000)).rotated(random.randf_range(0, 2 * PI)) / 5#/ sqrt(width)
 	var angular_vel: float = random.randf_range(-1000, 1000) / mass
 	var asteroid: Asteroid = asteroid_template.instance()
 	add_child(asteroid)

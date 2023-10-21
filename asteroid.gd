@@ -10,8 +10,8 @@ class DragInfo:
 		start_time_msec = time_msec
 		local_start_pos = local_pos
 
-const max_impulse: float = 50000.0
-const max_momentum: float = 500000.0
+const max_impulse: float = 100000.0
+const max_momentum: float = 1000000.0
 onready var sprite = $Sprite
 onready var collision_shape = $CollisionShape
 var shape_start_radius: float
