@@ -20,7 +20,6 @@ func _ready() -> void:
 	print("random seed ", random.seed)
 	# get_tree().set_debug_collisions_hint(true) 
 	spaceship.position = Vector2.ZERO
-	spaceship.bla
 	spaceship.linear_velocity = Vector2.ZERO
 	game_over_ui.hide()
 	pause_ui.hide()
