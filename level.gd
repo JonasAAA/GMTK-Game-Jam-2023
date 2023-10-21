@@ -12,20 +12,23 @@ const asteroid_despawn_dist = 3000
 var start_time_msec: int
 var score: int = 0
 var playing: bool = false
+export(float, 0.5, 2) var start_spawn_coeff: float = 1
+export(float, 0.5, 2) var spawn_coeff_increase_speed: float = 1
 var spawn_coeff: float
 
 func _ready() -> void:
 	random = RandomNumberGenerator.new()
 	random.seed = OS.get_ticks_msec()
 	print("random seed ", random.seed)
-	# get_tree().set_debug_collisions_hint(true) 
+	# get_tree().set_debug_collisions_hint(true)
+	spaceship.init(start_spawn_coeff, spawn_coeff_increase_speed) 
 	spaceship.position = Vector2.ZERO
 	spaceship.linear_velocity = Vector2.ZERO
 	game_over_ui.hide()
 	pause_ui.hide()
 	start_time_msec = OS.get_ticks_msec()
 	level_ui.show()
-	spawn_coeff = 0.1
+	spawn_coeff = 0.05 * start_spawn_coeff
 
 func _get_progress() -> int:
 	if (not playing) or get_tree().paused:
@@ -42,7 +45,7 @@ func _physics_process(_delta: float) -> void:
 	if not playing:
 		return
 	var old_spawn_coeff = spawn_coeff
-	spawn_coeff += _delta * 0.01
+	spawn_coeff += _delta * 0.005 * spawn_coeff_increase_speed
 	if floor(old_spawn_coeff / 0.1) < floor(spawn_coeff / 0.1):
 		print("spawn coeff increased to ", spawn_coeff)
 #	var num_asteroids_to_spawn: int = random.randi_range(0, 1)

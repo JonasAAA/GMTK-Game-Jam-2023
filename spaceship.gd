@@ -5,10 +5,10 @@ export var health = 100
 export var target_speed = 200
 const drag = 10
 const thrust_vel = 100
-const max_small_intensity_asteroids = 7 + 1
-const min_medium_intensity_asteroids = 7 - 1
-const max_medium_intensity_asteroids = 15 + 1
-const min_high_intensity_asteroids = 15 - 1
+var max_small_intensity_asteroids: int
+var min_medium_intensity_asteroids: int
+var max_medium_intensity_asteroids: int
+var min_high_intensity_asteroids: int
 var close_asteroid_count: int
 var cur_intensity: int
 
@@ -16,6 +16,14 @@ func _ready() -> void:
 	close_asteroid_count = 0
 	set_intensity(AK.SWITCHES.INTENSITY.SWITCH.SMALL)
 	GlobalState.wwise_register_game_obj(self, "Spaceship")
+
+func init(start_spawn_coeff: float, spawn_coeff_increase_speed: float) -> void:
+	var asteroid_boundary_one: int = round(3.5 * start_spawn_coeff) as int
+	var asteroid_boundary_two: int = round(3.5 * (start_spawn_coeff + spawn_coeff_increase_speed)) as int
+	max_small_intensity_asteroids = asteroid_boundary_one + 1
+	min_medium_intensity_asteroids = asteroid_boundary_one - 1
+	max_medium_intensity_asteroids = asteroid_boundary_two + 1
+	min_high_intensity_asteroids = asteroid_boundary_two - 1
 
 func _on_Spaceship_body_entered(body: Node) -> void:
 #	print("mass ", body.mass, " velocity diff ", body.linear_velocity.distance_to(linear_velocity))
