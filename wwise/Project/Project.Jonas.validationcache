@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Triggers\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Switches\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\States\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\SoundBanks\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Queries\Factory Queries.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Queries\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Project.wproj" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Project.Jonas.wsettings" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Presets\Factory Spatial Audio.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Presets\Default Work Unit.wwu" DateLow="1697870824" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Modulators\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Mixing Sessions\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Metadata\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Game Parameters\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Events\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Effects\Factory Effects.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Effects\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Conversion Settings\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Audio Devices\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Attenuations\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK-Game-Jam-2023\wwise\Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1697870820" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK GJ 2023\GMTK Game Jam 2023\wwise\Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1688712131" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK GJ 2023\GMTK Game Jam 2023\wwise\Project\Triggers\Default Work Unit.wwu" DateLow="1688712131" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Jonas\Desktop\GMTK GJ 2023\GMTK Game Jam 2023\wwise\Project\Switches\Default Work Unit.wwu" DateLow="1688712131" DateHigh="0"/>
